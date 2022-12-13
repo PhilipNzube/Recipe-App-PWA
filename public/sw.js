@@ -10,6 +10,7 @@ this.addEventListener("install", (event) => {
                 '/static/media/vegetable.5c2ee5bb1195793cc921.jpg',
                 '/favicon.ico',
                 '/logo192.png',
+                '/logo512.png',
                 '/index.html',
                 '/'
             ])
