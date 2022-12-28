@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import pancake from "./Images/pancakes.jpeg"
 
 export default function Pancakes() {
     useEffect(() => {
@@ -16,6 +17,10 @@ export default function Pancakes() {
     const Navigate = useNavigate();
     const GoHome = () => {
         Navigate("/");
+    }
+
+    const GoToContact = () => {
+        Navigate("/Contact");  
     }
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
@@ -35,7 +40,7 @@ export default function Pancakes() {
                             <ul>
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
-                                <a id="Contact" href={url}>CONTACT</a>
+                                <a id="Contact" href={url} onClick={GoToContact}>CONTACT</a>
 
                             </ul>
                         </div>
@@ -44,7 +49,7 @@ export default function Pancakes() {
                 <div className="wh">
                     <center>
                         <h2> Recipes for Pancakes </h2>
-                        <img alt="" id="PancakeImage" />
+                        <img alt="" src={pancake} id="PancakeImage" />
                         <div id="main">
                             <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
                             <div id="source">

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Tomato from "./Images/tomato.jpeg";
+import vegetable from './Images/vegetable.jpg';
 
-export default function Tomatoes() {
+export default function Vegetables() {
     useEffect(() => {
         setTimeout(() => {
             document.body.style.overflowY = "hidden";
@@ -29,6 +29,7 @@ export default function Tomatoes() {
     const Hide = () => {
         document.getElementById("NAVIGATION").style.display = "none";
     }
+
     return (
         <>
             <div id="Loader"><center>LOADING...</center></div>
@@ -48,21 +49,26 @@ export default function Tomatoes() {
                 </header>
 
                 <div className="wh">
-                    <center><h2> Recipes for Tomato Stew </h2>
-                    <img alt="" id="TomatoImage" src={Tomato} />
-                    <div id="main">
-                        <p id="in"><input type="checkbox" id="radio" /> Ingredient Required</p>
-                        <div id="source">
-                            <p> Seasoning</p>
-                            <p> Salt</p>
-                            <p> Tomato Paste/ Blended Tomato</p>
-                            <p> Vegetable Oil</p>
+                    <center>
+                        <h2> Recipes for Vegetable-Soup </h2>
+                        <img id="VegetablesImage" src={vegetable} alt="" />
+                        <div id="main">
+                            <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
+                            <div id="source">
+                                <p> Vegetable </p>
+                                <p> Palm Oil</p>
+                                <p> Seasoning</p>
+                                <p> Locust Beans</p>
+                                <p> Pepper</p>
+                                <p> Tomato</p>
+
+
+
+                            </div>
                         </div>
-                    </div>
                     </center>
                 </div>
             </div>
         </>
-
     )
 }

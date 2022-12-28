@@ -9,8 +9,15 @@ import PuffPuff from './PuffPuff.js';
 import Springrolls from './Springrolls.js';
 import ChinChin from './ChinChin.js';
 import Jellofrice from './Jellofrice.js';
+import Cake from './Cake.js';
+import Beanssoup from './Beanssoup';
+import Contact from './Contact.js';
+import Meatpie from './Meatpie';
 import Friedrice from './Friedrice.js';
 import Ewedu from './Ewedu.js';
+import CoconutRice from './CoconutRice.js';
+import Okra from './Okra.js';
+import Vegetables from './Vegetables.js';
 import swDev from './swDev.js';
 
 function START(){
@@ -26,7 +33,14 @@ function START(){
                     <Route path="/ChinChin" element={<ChinChin />} />
                     <Route path="/Jellofrice" element={<Jellofrice />} />
                     <Route path="/Friedrice" element={<Friedrice />} />
-                    <Route path="/Ewedu" element={<Ewedu/>}/>
+                    <Route path="/Ewedu" element={<Ewedu />} />
+                    <Route path="/Beanssoup" element={<Beanssoup />} />
+                    <Route path="/Cake" element={<Cake />} />
+                    <Route path="/Meatpie" element={<Meatpie />} />
+                    <Route path="/Contact" element={<Contact />} />
+                    <Route path="/CoconutRice" element={<CoconutRice />} />
+                    <Route path="/Okra" element={<Okra />} />
+                    <Route path="/Vegetables" element={<Vegetables/>}/>
         </Routes>
         </BrowserRouter>
         </>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
+import jellof from "./Images/jollof.jpeg";
 
 export default function Jellofrice() {
     useEffect(() => {
@@ -16,6 +17,9 @@ export default function Jellofrice() {
     const Navigate = useNavigate();
     const GoHome = () => {
         Navigate("/");
+    }
+    const GoToContact = () => {
+        Navigate("/Contact");  
     }
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
@@ -35,7 +39,7 @@ export default function Jellofrice() {
                             <ul>
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
-                                <a id="Contact" href={url}>CONTACT</a>
+                                <a id="Contact" href={url} onClick={GoToContact}>CONTACT</a>
 
                             </ul>
                         </div>
@@ -43,8 +47,23 @@ export default function Jellofrice() {
                 </header>
                 <div className="wh">
                     <center>
-                        <h2> Recipes for SpringRolls </h2>
-                        <img id="JellofImage" alt="" />
+                        <h2> Recipes for Jollof Rice </h2>
+                        <img id="JellofImage" src={jellof} alt=""/>
+                        <div id="main">
+                            <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
+                            <div id="source">
+                                <p> 2 Cups of Rice</p>
+                                <p> Tomato paste </p>
+                                <p> Vegetable Oil </p>
+                                <p> Seasoning </p>
+                                <p> Salt </p>
+                                <p>jollof rice spices</p>
+                                <p> Carrot (optional) </p>
+                                <p> onion (optional)</p>
+
+
+                            </div>
+                        </div>
                     </center>
                 </div>
             </div>

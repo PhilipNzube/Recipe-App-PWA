@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Tomato from "./Images/tomato.jpeg";
 
-export default function Tomatoes() {
+export default function Beanssoup() {
     useEffect(() => {
         setTimeout(() => {
             document.body.style.overflowY = "hidden";
@@ -18,17 +17,13 @@ export default function Tomatoes() {
     const GoHome = () => {
         Navigate("/");
     }
-
-    const GoToContact = () => {
-        Navigate("/Contact");  
-    }
-
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
     }
     const Hide = () => {
         document.getElementById("NAVIGATION").style.display = "none";
     }
+
     return (
         <>
             <div id="Loader"><center>LOADING...</center></div>
@@ -40,7 +35,7 @@ export default function Tomatoes() {
                             <ul>
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
-                                <a id="Contact" href={url} onClick={GoToContact}>CONTACT</a>
+                                <a id="Contact" href={url}>CONTACT</a>
 
                             </ul>
                         </div>
@@ -48,21 +43,21 @@ export default function Tomatoes() {
                 </header>
 
                 <div className="wh">
-                    <center><h2> Recipes for Tomato Stew </h2>
-                    <img alt="" id="TomatoImage" src={Tomato} />
-                    <div id="main">
-                        <p id="in"><input type="checkbox" id="radio" /> Ingredient Required</p>
-                        <div id="source">
-                            <p> Seasoning</p>
-                            <p> Salt</p>
-                            <p> Tomato Paste/ Blended Tomato</p>
-                            <p> Vegetable Oil</p>
-                        </div>
-                    </div>
+                    <center>
+                        <h1> Contacts </h1>
+                        <fieldset id="first">
+                            <legend > Instagram</legend>
+                            <p> Contact us on Instagram at</p><br />
+                            <p><a href={url}>  @Becca Recipies</a></p>
+                        </fieldset>
+                        <fieldset id="second">
+                            <legend > Gmail </legend>
+                            <p> Contact us on Gmail at</p><br />
+                            <p><a href="beccarecipies@gmail.com"> beccarecipies@gmail.com</a></p>
+                        </fieldset>
                     </center>
                 </div>
             </div>
         </>
-
     )
 }

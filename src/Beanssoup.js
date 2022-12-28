@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Tomato from "./Images/tomato.jpeg";
+import Beans from './Images/beanss.jpeg';
 
-export default function Tomatoes() {
+export default function Beanssoup() {
     useEffect(() => {
         setTimeout(() => {
             document.body.style.overflowY = "hidden";
@@ -29,6 +29,7 @@ export default function Tomatoes() {
     const Hide = () => {
         document.getElementById("NAVIGATION").style.display = "none";
     }
+
     return (
         <>
             <div id="Loader"><center>LOADING...</center></div>
@@ -48,21 +49,23 @@ export default function Tomatoes() {
                 </header>
 
                 <div className="wh">
-                    <center><h2> Recipes for Tomato Stew </h2>
-                    <img alt="" id="TomatoImage" src={Tomato} />
-                    <div id="main">
-                        <p id="in"><input type="checkbox" id="radio" /> Ingredient Required</p>
-                        <div id="source">
-                            <p> Seasoning</p>
-                            <p> Salt</p>
-                            <p> Tomato Paste/ Blended Tomato</p>
-                            <p> Vegetable Oil</p>
+                    <center>
+                        <h2> Recipes for Beans-Soup </h2>
+                        <img id="BeansImage" src={Beans} alt="" />
+                        <div id="main">
+                            <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
+                            <div id="source">
+                                <p> Beans </p>
+                                <p> Palm Oil</p>
+                                <p> Seasoning</p>
+                                <p> Potash</p>
+
+
+                            </div>
                         </div>
-                    </div>
                     </center>
                 </div>
             </div>
         </>
-
     )
 }

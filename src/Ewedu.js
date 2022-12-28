@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Ewe from './Images/ewedu1.jpeg';
 
 export default function Ewedu() {
     useEffect(() => {
@@ -16,6 +17,9 @@ export default function Ewedu() {
     const Navigate = useNavigate();
     const GoHome = () => {
         Navigate("/");
+    }
+    const GoToContact = () => {
+        Navigate("/Contact");  
     }
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
@@ -35,7 +39,7 @@ export default function Ewedu() {
                             <ul>
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
-                                <a id="Contact" href={url}>CONTACT</a>
+                                <a id="Contact" href={url} onClick={GoToContact}>CONTACT</a>
 
                             </ul>
                         </div>
@@ -45,7 +49,7 @@ export default function Ewedu() {
                 <div className="wh">
                     <center>
                         <h2> Recipes for Ewedu Soup </h2>
-                        <img id="EweduImage" alt="" />
+                        <img id="EweduImage" alt="" src={Ewe} />
                         <div id="main">
                             <p id="in"><input type="checkbox" id="radio" />Ingredient Required</p>
                             <div id="source">

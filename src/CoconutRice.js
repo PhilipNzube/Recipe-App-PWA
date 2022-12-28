@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Tomato from "./Images/tomato.jpeg";
+import Rice from './Images/ricec.jpeg';
 
-export default function Tomatoes() {
+export default function CoconutRice() {
     useEffect(() => {
         setTimeout(() => {
             document.body.style.overflowY = "hidden";
@@ -18,17 +18,16 @@ export default function Tomatoes() {
     const GoHome = () => {
         Navigate("/");
     }
-
     const GoToContact = () => {
         Navigate("/Contact");  
     }
-
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
     }
     const Hide = () => {
         document.getElementById("NAVIGATION").style.display = "none";
     }
+
     return (
         <>
             <div id="Loader"><center>LOADING...</center></div>
@@ -48,21 +47,24 @@ export default function Tomatoes() {
                 </header>
 
                 <div className="wh">
-                    <center><h2> Recipes for Tomato Stew </h2>
-                    <img alt="" id="TomatoImage" src={Tomato} />
-                    <div id="main">
-                        <p id="in"><input type="checkbox" id="radio" /> Ingredient Required</p>
-                        <div id="source">
-                            <p> Seasoning</p>
-                            <p> Salt</p>
-                            <p> Tomato Paste/ Blended Tomato</p>
-                            <p> Vegetable Oil</p>
+                    <center>
+                        <h2> Recipes for Coconut-Rice </h2>
+                        <img id="CoconutRiceImage" src={Rice} alt=""/>
+                        <div id="main">
+                            <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
+                            <div id="source">
+                                <p> Rice </p>
+                                <p> Coconut</p>
+                                <p> Salt </p>
+                                <p> Seasoning</p>
+                                <p> Vegetable Oil </p>
+
+
+                            </div>
                         </div>
-                    </div>
                     </center>
                 </div>
             </div>
         </>
-
     )
 }

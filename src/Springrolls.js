@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import spring from "./Images/spring.jpeg";
 
 export default function Springrolls() {
     useEffect(() => {
@@ -17,6 +18,11 @@ export default function Springrolls() {
     const GoHome = () => {
         Navigate("/");
     }
+
+    const GoToContact = () => {
+        Navigate("/Contact");  
+    }
+
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
     }
@@ -35,7 +41,7 @@ export default function Springrolls() {
                             <ul>
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
-                                <a id="Contact" href={url}>CONTACT</a>
+                                <a id="Contact" href={url} onClick={GoToContact}>CONTACT</a>
 
                             </ul>
                         </div>
@@ -45,7 +51,7 @@ export default function Springrolls() {
                 <div className="wh">
                     <center>
                         <h2> Recipes for SpringRolls </h2>
-                        <img alt="" id="SpringRollImage" src="spring.jpeg" />
+                        <img alt="" id="SpringRollImage" src={spring} />
                         <div id="main">
                             <p id="in"><input type="checkbox" id="radio" /> Ingredient Required</p>
                             <div id="source">
