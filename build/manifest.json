@@ -3,19 +3,19 @@
   "name": "Food Recipie App",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "ICON.png",
       "sizes": "64x64",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "ICON192.png",
       "type": "image/png",
-      "sizes": "192x145"
+      "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "ICON512.png",
       "type": "image/png",
-      "sizes": "512x387"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
