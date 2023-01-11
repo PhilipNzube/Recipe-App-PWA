@@ -9,6 +9,9 @@ export default function Beanssoup() {
             document.getElementById("Loader").style.display = "none";
             setTimeout(() => {
                 document.body.style.overflowY = "visible";
+                document.getElementById("Contact").style.textDecoration = "underline";
+                document.getElementById("Contact").style.textDecorationColor = "red";
+                document.getElementById("Contact").style.textDecorationThickness = "3px";
             }, 1500);
         }, 1000);
     }, []);
@@ -32,7 +35,7 @@ export default function Beanssoup() {
                     <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
-                            <ul>
+                            <ul id="HAC">
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
                                 <a id="Contact" href={url}>CONTACT</a>

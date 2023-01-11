@@ -38,7 +38,7 @@ export default function Okra() {
                     <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
-                            <ul>
+                            <ul id="HAC">
                                 <a id="Home" href={url} onClick={GoHome}>HOME</a>
                                 <a id="About" href={url}>ABOUT </a>
                                 <a id="Contact" href={url} onClick={GoToContact}>CONTACT</a>

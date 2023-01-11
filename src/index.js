@@ -18,6 +18,8 @@ import Ewedu from './Ewedu.js';
 import CoconutRice from './CoconutRice.js';
 import Okra from './Okra.js';
 import Vegetables from './Vegetables.js';
+import FishPepperSoup from './FishPepperSoup.js';
+import IceCream from './IceCream.js';
 import swDev from './swDev.js';
 
 function START(){
@@ -40,7 +42,9 @@ function START(){
                     <Route path="/Contact" element={<Contact />} />
                     <Route path="/CoconutRice" element={<CoconutRice />} />
                     <Route path="/Okra" element={<Okra />} />
-                    <Route path="/Vegetables" element={<Vegetables/>}/>
+                    <Route path="/Vegetables" element={<Vegetables />} />
+                    <Route path="/FPS" element={<FishPepperSoup />} />
+                    <Route path="/IceCream" element={<IceCream/>}/>
         </Routes>
         </BrowserRouter>
         </>
