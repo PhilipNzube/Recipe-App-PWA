@@ -99,7 +99,7 @@ export default function BeccaRecepies() {
 
 
                     <center>
-                        <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1>
+                        <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1>
                     </center>
 
 

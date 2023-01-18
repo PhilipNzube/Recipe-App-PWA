@@ -20,7 +20,7 @@ export default function Tomatoes() {
     }
 
     const GoToContact = () => {
-        Navigate("/Contact");  
+        Navigate("/Contact");
     }
 
     const Show = () => {
@@ -34,7 +34,7 @@ export default function Tomatoes() {
             <div id="Loader"><center>LOADING...</center></div>
             <div id="Container">
                 <header onMouseLeave={Hide}>
-                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
+                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
                             <ul id="HAC">
@@ -49,16 +49,32 @@ export default function Tomatoes() {
 
                 <div className="wh">
                     <center><h2> Recipes for Tomato Stew </h2>
-                    <img alt="" id="TomatoImage" src={Tomato} />
-                    <div id="main">
-                        <p id="in"><input type="checkbox" id="radio" /> Ingredient Required</p>
-                        <div id="source">
-                            <p> Seasoning</p>
-                            <p> Salt</p>
-                            <p> Tomato Paste/ Blended Tomato</p>
-                            <p> Vegetable Oil</p>
+                        <img alt="" id="TomatoImage" src={Tomato} />
+                        <div id="main">
+                            <p id="in">INGREDIENTS REQUIRED</p>
+                            <div id="source">
+                                <p> Tomato Paste/ Blended Tomato</p>
+                                <p> 2 large onions</p>
+                                <p> 1 large red bell pepper/tatashe</p>
+                                <p>  2 scotch bonnet peppers/atarodo</p>
+                                <p>   1/2 tablespoon dry thyme</p>
+                                <p>  2 seasoning cubes, knorr or maggi</p>
+                                <p>  Salt, to taste</p>
+                                <p>  1/2 to 1 cup vegetable oil</p>
+                                <p>  Meat stock (I used the stock from the chicken)</p>
+
+                            </div>
+                            <h2> Direction of making Tomato Soup</h2>
+                            <ul>
+                                <li>Wash,chop and blend with a little water the tomatoes, bell pepper or tatashe,  hot peppers, garlic, ginger and 2 onions.
+                                    Try blending small quantities at a time so that the mixture blends properly and that you don’t overwork your blender</li>
+                                <li>Pour your blended tomato mix into a medium pot and cook </li>
+                                <li>Add meat pieces, seasoning cubes, curry, thyme, and some salt</li>
+                                <li> Add meat pieces, seasoning cubes, curry, thyme, and some salt</li>
+                                <li> Cook at low-medium heat and stir at short intervals till the oil has completely separated from the tomato blend.
+                                    Taste the stew to make sure that the raw tomato taste is gone then turn off the heat</li>
+                            </ul>
                         </div>
-                    </div>
                     </center>
                 </div>
             </div>

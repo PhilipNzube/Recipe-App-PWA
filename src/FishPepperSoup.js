@@ -33,7 +33,7 @@ export default function FishPepperSoup() {
             <div id="Loader"><center>LOADING...</center></div>
             <div id="Container">
                 <header onMouseLeave={Hide}>
-                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
+                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
                             <ul id="HAC">
@@ -51,7 +51,7 @@ export default function FishPepperSoup() {
                         <h2>  Recipes for Fish peppersoup </h2>
                         <img alt="" id="FishPepperSoupImage" src={FPS} />
                         <div id="main">
-                            <p id="in"> Ingredient Required</p>
+                            <p id="in">INGREDIENTS REQUIRED</p>
                             <div id="source">
                                 <p> 2kg fresh Fish</p>
                                 <p> 110g onions, chopped (1 medium)</p>

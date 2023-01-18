@@ -33,7 +33,7 @@ export default function IceCream() {
             <div id="Loader"><center>LOADING...</center></div>
             <div id="Container">
                 <header onMouseLeave={Hide}>
-                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
+                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
                             <ul id="HAC">
@@ -51,7 +51,7 @@ export default function IceCream() {
                         <h2>  Recipes for Ice cream </h2>
                         <img alt="" id="IceCreamImage" src={IC} />
                         <div id="main">
-                            <p id="in"> Ingredient Required</p>
+                            <p id="in">INGREDIENTS REQUIRED</p>
                             <div id="source">
                                 <p> Condensed milk (1 ton)</p>
                                 <p> Heavy whip Cream (1 cup)</p>

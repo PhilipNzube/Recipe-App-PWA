@@ -20,7 +20,7 @@ export default function Beanssoup() {
     }
 
     const GoToContact = () => {
-        Navigate("/Contact");  
+        Navigate("/Contact");
     }
 
     const Show = () => {
@@ -35,7 +35,7 @@ export default function Beanssoup() {
             <div id="Loader"><center>LOADING...</center></div>
             <div id="Container">
                 <header onMouseLeave={Hide}>
-                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
+                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
                             <ul id="HAC">
@@ -53,7 +53,7 @@ export default function Beanssoup() {
                         <h2> Recipes for Beans-Soup </h2>
                         <img id="BeansImage" src={Beans} alt="" />
                         <div id="main">
-                            <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
+                            <p id="in">INGREDIENTS REQUIRED</p>
                             <div id="source">
                                 <p> Beans </p>
                                 <p> Palm Oil</p>
@@ -62,6 +62,16 @@ export default function Beanssoup() {
 
 
                             </div>
+                            <h2> Direction for making Beans-Soup</h2>
+                            <ul>
+                                <li> Put the desire qunatity of beans in a bowl and add little water</li>
+                                <li> Pour the above in food processor to peel the back of the beans</li>
+                                <li> After peeling theback of the beans,  boli the the beans till get soft</li>
+                                <li> After check if it is soft put it in a blender and blend till it is in a liquid form</li>
+                                <li> Now put it in a pot and add seasonings</li>
+                                <li> After adding seasoning allow it to cook for a minute</li>
+
+                            </ul>
                         </div>
                     </center>
                 </div>

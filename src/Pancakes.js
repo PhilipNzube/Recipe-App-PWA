@@ -20,7 +20,7 @@ export default function Pancakes() {
     }
 
     const GoToContact = () => {
-        Navigate("/Contact");  
+        Navigate("/Contact");
     }
     const Show = () => {
         document.getElementById("NAVIGATION").style.display = "block";
@@ -34,7 +34,7 @@ export default function Pancakes() {
             <div id="Loader"><center>LOADING...</center></div>
             <div id="Container">
                 <header onMouseLeave={Hide}>
-                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
+                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
                             <ul id="HAC">
@@ -51,16 +51,38 @@ export default function Pancakes() {
                         <h2> Recipes for Pancakes </h2>
                         <img alt="" src={pancake} id="PancakeImage" />
                         <div id="main">
-                            <p id="in"><input type="checkbox" id="radio"/> Ingredient Required</p>
+                            <p id="in">INGREDIENTS REQUIRED</p>
                             <div id="source">
-                                <p> Flour </p>
-                                <p> sugar</p>
-                                <p> Milk </p>
-                                <p> Eggs</p>
+                                <p> 3 cup of Flour </p>
+                                <p> 5 tablespoons of sugar</p>
+                                <p>3 tablespoons of powder Milk </p>
+                                <p>2  Eggs</p>
+                                <p> 1 teaspoon of dry Pepper</p>
+                                <p> Vegetable oil</p>
+
 
 
                             </div>
+
                         </div>
+                        <h2> Direction for Dough</h2>
+                        <ul>
+                            <li> Add the flour to a  bowl</li>
+                            <li> Add the Sugar to the bowl</li>
+                            <li> Add the Pepper to the bowl</li>
+                            <li> whisk the eggs with the milk in a seperate bowl </li>
+                            <li> Mix the above all together </li>
+                            <li> Then add some water until the mixture is semi-liquid and allow it to rest for 2 minutes</li>
+                        </ul>
+                        <h2> Direction for making Pancakes</h2>
+                        <ul>
+                            <li>Heat a Frying Pan for a minute</li>
+                            <li> Add 1 teaspoon of oil to the Frying pan and spread it round the frying pan with a brush</li>
+                            <li>Add appropriate amount of the dough that was prepared earlier in the pan</li>
+                            <li> When bubbles starts to form ontop and the edge look dry flip the pancakes to other side</li>
+                            <li> After filping Wait for two minutes then remove the pancake from the pan</li>
+                            <li> Repeat the above process until the dough is finished</li>
+                        </ul>
                     </center>
                 </div>
             </div>

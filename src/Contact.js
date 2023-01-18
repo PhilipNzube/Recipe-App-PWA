@@ -32,7 +32,7 @@ export default function Beanssoup() {
             <div id="Loader"><center>LOADING...</center></div>
             <div id="Container">
                 <header onMouseLeave={Hide}>
-                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPIES<span className="com">.COM</span></h1></center>
+                    <center> <h1 className="h" onMouseOver={Show}>BECCA RECIPES<span className="com">.COM</span></h1></center>
                     <nav id="NAVIGATION">
                         <div id="div">
                             <ul id="HAC">
@@ -51,12 +51,12 @@ export default function Beanssoup() {
                         <fieldset id="first">
                             <legend > Instagram</legend>
                             <p> Contact us on Instagram at</p><br />
-                            <p><a href={url}>  @Becca Recipies</a></p>
+                            <p><a href={url}>  @Becca Recipes</a></p>
                         </fieldset>
                         <fieldset id="second">
                             <legend > Gmail </legend>
                             <p> Contact us on Gmail at</p><br />
-                            <p><a href="beccarecipies@gmail.com"> beccarecipies@gmail.com</a></p>
+                            <p><a href="beccarecipes@gmail.com"> beccarecipes@gmail.com</a></p>
                         </fieldset>
                     </center>
                 </div>
